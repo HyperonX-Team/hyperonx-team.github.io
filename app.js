@@ -22,20 +22,33 @@
 
   function fmtInt(n) { return n == null ? "\u2014" : Intl.NumberFormat("en-US").format(n); }
 
-  function stripMarkdown(raw) {
-    return raw
+  function cleanParagraphs(raw) {
+    var s = raw
+      .replace(/<h[1-6][^>]*>[\s\S]*?<\/h[1-6]>/gi, "\n\n")
       .replace(/```[\s\S]*?```/g, " ")
+      .replace(/<img[^>]*>/gi, " ")
+      .replace(/<[^>]+>/g, " ")
       .replace(/!\[[^\]]*\]\([^)]*\)/g, " ")
-      .replace(/\[([^\]]*)\]\([^)]*\)/g, "$1")
-      .replace(/[#>*_`~|]/g, " ")
-      .replace(/[ \t]+/g, " ")
-      .replace(/\n{3,}/g, "\n\n")
-      .trim();
+      .replace(/\[([^\]]*)\]\([^)]*\)/g, "$1");
+    var out = [];
+    s.split(/\n{2,}/).forEach(function (p) {
+      var clean = p
+        .replace(/^\s{0,4}#+\s*/g, "")
+        .replace(/[#>*_`~|]/g, " ")
+        .replace(/\s+([,.;:!?])/g, "$1")
+        .replace(/[ \t]+/g, " ")
+        .trim();
+      if (clean.length < 18) return;
+      out.push(clean);
+    });
+    return out;
   }
 
-  function firstParagraph(text, max) {
-    var p = (text.split(/\n{2,}/)[0] || text).replace(/\s+/g, " ").trim();
-    return p.length > max ? p.slice(0, max - 1) + "\u2026" : p;
+  function summarize(paras, max) {
+    var joined = paras[0] || "";
+    if (joined.length < 60 && paras[1]) joined += ". " + paras[1];
+    if (joined.length > max) joined = joined.slice(0, max - 1) + "\u2026";
+    return joined || null;
   }
 
   /* =====================================================================
@@ -409,9 +422,10 @@
       .then(function (res) { return res.ok ? res.text() : null; })
       .then(function (text) {
         if (!text) return;
-        var clean = stripMarkdown(text).split("\n").filter(function (l) { return l.trim(); }).join("\n");
-        r.readmeSummary = firstParagraph(clean, 240) || null;
-        r.readmeFull = firstParagraph(clean, 700) || null;
+        var paras = cleanParagraphs(text);
+        r.readmeSummary = summarize(paras, 240);
+        var full = paras.slice(0, 3).join(" ");
+        r.readmeFull = full.length > 700 ? full.slice(0, 699) + "\u2026" : full || null;
         r.hasReadme = true;
         if (r.readmeFull === r.readmeSummary) r.readmeFull = null;
       })
