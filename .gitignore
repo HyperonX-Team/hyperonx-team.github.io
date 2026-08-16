@@ -1,0 +1,12 @@
+# Agent / tool runtime state (never commit)
+.omo/
+.omo
+.codegraph
+.codegraph/
+
+# OS noise
+.DS_Store
+Thumbs.db
+
+# Editor
+*.swp

@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="en" data-color-scheme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#08090A">
+
+<title>HyperonX — Redesigning Broken Systems</title>
+<meta name="description" content="HyperonX is an anti-monopoly deep-tech R&D studio building open, radically more efficient alternatives to centralized infrastructure. 10× efficiency. Less infrastructure. More control.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://hyperonx-team.github.io/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="HyperonX">
+<meta property="og:title" content="HyperonX — Redesigning Broken Systems">
+<meta property="og:description" content="An anti-monopoly deep-tech R&D studio building open, radically more efficient alternatives to centralized infrastructure.">
+<meta property="og:url" content="https://hyperonx-team.github.io/">
+<meta property="og:image" content="assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="HyperonX — anti-monopoly deep-tech R&D studio">
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="HyperonX — Redesigning Broken Systems">
+<meta name="twitter:description" content="An anti-monopoly deep-tech R&D studio building open, radically more efficient alternatives to centralized infrastructure.">
+<meta name="twitter:image" content="assets/og.png">
+
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="apple-touch-icon" href="assets/favicon.svg">
+
+<!-- Fonts: self-hosted variable latin subsets -->
+<link rel="preload" href="assets/fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/jetbrains-mono-latin.woff2" as="font" type="font/woff2" crossorigin>
+
+<link rel="stylesheet" href="style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "HyperonX",
+  "description": "Anti-monopoly deep-tech R&D studio building open, radically more efficient alternatives to centralized infrastructure.",
+  "url": "https://hyperonx-team.github.io/",
+  "sameAs": ["https://github.com/HyperonX-Team"],
+  "slogan": "We redesign broken systems."
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- Scroll progress hairline -->
+<div class="progress" aria-hidden="true"><div class="progress__bar"></div></div>
+
+<header class="topbar" id="topbar">
+  <div class="topbar__inner">
+    <a class="brand" href="#top" aria-label="HyperonX — home">
+      <span class="brand__mark" aria-hidden="true">+</span>
+      <span class="brand__text">HYPERONX</span>
+      <span class="brand__rev" aria-hidden="true">[R&amp;D-0.1]</span>
+    </a>
+
+    <nav class="topnav" aria-label="Primary">
+      <a class="topnav__link" href="#systems"><span aria-hidden="true">01</span>Systems</a>
+      <a class="topnav__link" href="#projects"><span aria-hidden="true">02</span>Projects</a>
+      <a class="topnav__link" href="#research"><span aria-hidden="true">03</span>Research</a>
+      <a class="topnav__link" href="#opensource"><span aria-hidden="true">04</span>GitHub</a>
+    </nav>
+
+    <div class="topbar__actions">
+      <a class="btn btn--ghost btn--nav" href="https://github.com/HyperonX-Team" target="_blank" rel="noopener noreferrer">
+        Explore GitHub <span class="arrow" aria-hidden="true">↗</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+        <span class="nav-toggle__label">Menu</span>
+        <span class="nav-toggle__bars" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <nav aria-label="Mobile">
+      <a class="mobile-menu__link" href="#systems">01&nbsp; /&nbsp; Systems</a>
+      <a class="mobile-menu__link" href="#projects">02&nbsp; /&nbsp; Projects</a>
+      <a class="mobile-menu__link" href="#research">03&nbsp; /&nbsp; Research</a>
+      <a class="mobile-menu__link" href="#opensource">04&nbsp; /&nbsp; GitHub</a>
+    </nav>
+    <a class="btn btn--primary mobile-menu__cta" href="https://github.com/HyperonX-Team" target="_blank" rel="noopener noreferrer">
+      Explore GitHub <span class="arrow" aria-hidden="true">↗</span>
+    </a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="hero__bed" aria-hidden="true">
+      <canvas id="hero-canvas" role="img" aria-label="Animated diagram: a dense centralized node breaks apart and reorganizes into an open distributed mesh, while latency, energy, cost, control and waste measurements settle."></canvas>
+    </div>
+
+    <div class="hero__content">
+      <p class="overline hero__overline"><span class="overline__mark" aria-hidden="true">+</span> Anti-monopoly deep-tech R &amp; D studio</p>
+
+      <h1 class="hero__title" id="hero-title">
+        WE REDESIGN<br>
+        <span class="hero__title-broken">BROKEN SYSTEMS<span class="hero__cursor" aria-hidden="true">_</span></span>
+      </h1>
+
+      <p class="hero__lede">
+        HyperonX is an anti-monopoly deep-tech R&amp;D studio building radically more
+        efficient alternatives to centralized infrastructure.
+      </p>
+
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="#projects">
+          Explore the work <span class="arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="btn btn--ghost" href="https://github.com/HyperonX-Team" target="_blank" rel="noopener noreferrer">
+          GitHub <span class="arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
+
+      <ul class="status-strip" role="list">
+        <li class="status-strip__item status-strip__item--on">Open</li>
+        <li class="status-strip__item">Experimental</li>
+        <li class="status-strip__item">Hardware</li>
+        <li class="status-strip__item">Software</li>
+        <li class="status-strip__item">Research</li>
+      </ul>
+    </div>
+
+    <p class="hero__coords" aria-hidden="true">NODE / 52.5200°N 13.4050°E · 2026 REV 0.1 ·<span class="hero__coords-blink">▮</span></p>
+  </section>
+
+  <!-- ============ THESIS / SYSTEMS ============ -->
+  <section class="frame" id="systems" aria-labelledby="thesis-title">
+    <header class="frame__head">
+      <span class="frame__index" aria-hidden="true">[ 01 ]</span>
+      <h2 class="frame__label" id="thesis-title">Thesis / Systems</h2>
+      <span class="frame__rule" aria-hidden="true"></span>
+    </header>
+
+    <div class="thesis">
+      <p class="statement">The world is full of systems designed around&nbsp;scarcity, centralized ownership, and unnecessary&nbsp;complexity.</p>
+
+      <p class="statement support">
+        HyperonX looks for systems where <em>the architecture itself</em> is the problem.
+      </p>
+
+      <div class="transform" role="figure" aria-labelledby="transform-title">
+        <p class="transform__kicker" id="transform-title">Target architectures</p>
+        <div class="transform__cols">
+          <div class="transform__col transform__col--broken">
+            <div class="transform__tag">Broken system</div>
+            <h3 class="transform__head">TODAY</h3>
+            <ul class="transform__list">
+              <li>Centralized</li>
+              <li>Expensive</li>
+              <li>Closed</li>
+              <li>Fragile</li>
+              <li>Locked-in</li>
+            </ul>
+          </div>
+          <div class="transform__fn" aria-hidden="true">↓</div>
+          <div class="transform__col transform__col--ok">
+            <div class="transform__tag transform__tag--accent">HyperonX</div>
+            <h3 class="transform__head">REBUILT</h3>
+            <ul class="transform__list">
+              <li>Local</li>
+              <li>Efficient</li>
+              <li>Open</li>
+              <li>Modular</li>
+              <li>User-owned</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="frame projects" id="projects" aria-labelledby="projects-title">
+    <header class="frame__head">
+      <span class="frame__index" aria-hidden="true">[ 02 ]</span>
+      <h2 class="frame__label" id="projects-title">Projects</h2>
+      <span class="frame__rule" aria-hidden="true"></span>
+      <p class="frame__head-note" role="status">Loaded from the live organization</p>
+    </header>
+
+    <div class="index-strip" aria-live="polite">
+      <p class="index-strip__row"><span class="dot dot--pending" id="index-dot" aria-hidden="true"></span><span id="index-line">SYNCING PUBLIC REPOSITORY INDEX…</span></p>
+      <p class="index-strip__row index-strip__row--muted"><span id="index-sync">LAST SYNC —</span></p>
+    </div>
+
+    <p class="projects__lede">
+      Public systems under active development. Click a project to inspect the build record.
+    </p>
+
+    <div id="projects-grid" aria-live="polite" aria-busy="true">
+      <!-- No-JS / API-offline fallback. JS replaces this grid with live data. -->
+      <div class="projects-fallback" id="projects-fallback">
+        <p class="overlabel"><span aria-hidden="true">[ STATIC INDEX ]</span> Live API unreachable — showing last known systems</p>
+        <ul class="fallback-list">
+          <li class="fallback-list__item">
+            <a href="https://github.com/HyperonX-Team/HyperonX" target="_blank" rel="noopener noreferrer">
+              <span class="fallback-list__name">HyperonX</span>
+              <span class="fallback-list__desc">From-scratch language-model architecture based on PODEM — Phase Orthogonal Delta Exchange Memory.</span>
+              <span class="fallback-list__gh" aria-hidden="true">↗</span>
+            </a>
+          </li>
+          <li class="fallback-list__item">
+            <a href="https://github.com/HyperonX-Team/Fairwave-Sim" target="_blank" rel="noopener noreferrer">
+              <span class="fallback-list__name">Fairwave-Sim</span>
+              <span class="fallback-list__desc">Community LTE/5G carrier simulation — private wireless infrastructure for communities, not carriers.</span>
+              <span class="fallback-list__gh" aria-hidden="true">↗</span>
+            </a>
+          </li>
+          <li class="fallback-list__item">
+            <a href="https://github.com/HyperonX-Team/Doctorprobe" target="_blank" rel="noopener noreferrer">
+              <span class="fallback-list__name">Doctorprobe</span>
+              <span class="fallback-list__desc">ESP32-based home-health sensing — hardware instrument, backend, and web application.</span>
+              <span class="fallback-list__gh" aria-hidden="true">↗</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <template id="project-card">
+      <article class="project project--tpl" tabindex="0">
+        <div class="project__gutter" aria-hidden="true"><span class="project__plus">+</span></div>
+        <div class="project__body">
+          <p class="project__category"></p>
+          <h3 class="project__name"></h3>
+          <p class="project__summary"></p>
+          <ul class="taglist"></ul>
+          <div class="project__meta">
+            <span class="project__meta-item project__lang"></span>
+            <span class="project__meta-item project__stars"></span>
+            <span class="project__meta-item project__updated"></span>
+          </div>
+          <a class="project__open" href="#" target="_blank" rel="noopener noreferrer">View repository <span class="arrow" aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+    </template>
+  </section>
+
+  <!-- ============ 10× RULE ============ -->
+  <section class="frame" id="rule10" aria-labelledby="rule10-title">
+    <header class="frame__head">
+      <span class="frame__index" aria-hidden="true">[ 03 ]</span>
+      <h2 class="frame__label" id="rule10-title">The 10× rule</h2>
+      <span class="frame__rule" aria-hidden="true"></span>
+    </header>
+
+    <div class="rule10">
+      <div class="rule10__numeral" aria-hidden="true">
+        <span class="rule10__ten">10</span><span class="rule10__x">×</span>
+      </div>
+      <div class="rule10__body">
+        <p class="statement statement--l">
+          We are not interested in making broken systems slightly better.
+        </p>
+        <p class="support">
+          A meaningful HyperonX project should radically reduce cost, energy, latency,
+          complexity, ownership friction, or infrastructure requirements.
+        </p>
+        <p class="rule10__scale overlabel"><span aria-hidden="true">[ DESIGN TARGET ]</span> Not every project has hit these numbers yet. This is the bar.</p>
+      </div>
+    </div>
+
+    <ul class="metrics" role="list">
+      <li class="metric"><span class="metric__value">10×</span><span class="metric__label">Less energy</span></li>
+      <li class="metric"><span class="metric__value">10×</span><span class="metric__label">Less cost</span></li>
+      <li class="metric"><span class="metric__value">10×</span><span class="metric__label">Less latency</span></li>
+      <li class="metric"><span class="metric__value">10×</span><span class="metric__label">Less complexity</span></li>
+      <li class="metric"><span class="metric__value">10×</span><span class="metric__label">More access</span></li>
+      <li class="metric"><span class="metric__value">10×</span><span class="metric__label">More control</span></li>
+    </ul>
+  </section>
+
+  <!-- ============ EXPERIMENTS / RESEARCH ============ -->
+  <section class="frame" id="research" aria-labelledby="research-title">
+    <header class="frame__head">
+      <span class="frame__index" aria-hidden="true">[ 04 ]</span>
+      <h2 class="frame__label" id="research-title">Research, not roadmaps</h2>
+      <span class="frame__rule" aria-hidden="true"></span>
+    </header>
+
+    <p class="statement statement--m">
+      HyperonX projects begin as experiments. Some become products. Some become
+      infrastructure. Some get&nbsp;killed.
+    </p>
+
+    <ol class="pipeline" role="list">
+      <li class="pipeline__stage"><span class="pipeline__num" aria-hidden="true">A</span>Hypothesis</li>
+      <li class="pipeline__arrow" aria-hidden="true">↓</li>
+      <li class="pipeline__stage"><span class="pipeline__num" aria-hidden="true">B</span>Prototype</li>
+      <li class="pipeline__arrow" aria-hidden="true">↓</li>
+      <li class="pipeline__stage"><span class="pipeline__num" aria-hidden="true">C</span>Measure</li>
+      <li class="pipeline__arrow" aria-hidden="true">↓</li>
+      <li class="pipeline__stage pipeline__stage--break"><span class="pipeline__num" aria-hidden="true">D</span>Break</li>
+      <li class="pipeline__arrow" aria-hidden="true">↓</li>
+      <li class="pipeline__stage pipeline__stage--final"><span class="pipeline__num" aria-hidden="true">E</span>Rebuild</li>
+    </ol>
+
+    <!-- ====== BROKEN → REBUILT INTERACTION ====== -->
+    <div class="rebuilt" id="rebuilt" aria-labelledby="rebuilt-title">
+      <header class="rebuilt__head">
+        <h3 class="rebuilt__title" id="rebuilt-title">Broken → Rebuilt</h3>
+        <p class="rebuilt__sub overlabel">Drag the rail. Watch the architecture change.</p>
+      </header>
+
+      <div class="rebuilt__lab">
+        <div class="rebuilt__zone rebuilt__zone--before" aria-hidden="true">
+          <span class="rebuilt__zone-label">Broken system</span>
+          <svg class="rebuilt__svg" id="rebuilt-svg" viewBox="0 0 640 260" role="img"
+               aria-label="Diagram of a centralized chain: tower to carrier to sim card to user. Dragging the slider rebuilds it into a mesh of community nodes and local infrastructure."></svg>
+        </div>
+        <div class="rebuilt__zone rebuilt__zone--after" aria-hidden="true">
+          <span class="rebuilt__zone-label">Rebuilt system</span>
+          <svg class="rebuilt__svg" id="rebuilt-svg-after" viewBox="0 0 640 260" aria-hidden="true"></svg>
+        </div>
+      </div>
+
+      <div class="rebuilt__control">
+        <span class="rebuilt__pole" id="pole-before">Broken</span>
+        <input class="rebuilt__slider" id="rebuilt-slider" type="range" min="0" max="100" step="1" value="0"
+               aria-label="System architecture transformation" aria-describedby="rebuilt-desc" aria-valuetext="0 percent rebuilt">
+        <span class="rebuilt__pole" id="pole-after">Rebuilt</span>
+        <output class="rebuilt__readout" id="rebuilt-readout" for="rebuilt-slider" aria-live="off">REBUILD 000%</output>
+      </div>
+
+      <div class="rebuilt__explain" id="rebuilt-desc">
+        <p class="rebuilt__story" data-state="before" aria-live="polite">
+          <strong>Before</strong>&nbsp;— one tower → one carrier → one SIM → one user.
+          Every hop is rent. A single point of failure. You own nothing on the path.
+        </p>
+        <p class="rebuilt__story" data-state="after" hidden>
+          <strong>After</strong>&nbsp;— community nodes ↔ local infrastructure ↔ users.
+          No monopoly at the center. The network is owned by the people who use it.
+        </p>
+      </div>
+
+      <p class="rebuilt__data overlabel"><span aria-hidden="true">[ DATA-DRIVEN ]</span> Transformation registry in <code>app.js</code> — new systems plug in.</p>
+    </div>
+  </section>
+
+  <!-- ============ OPEN SOURCE ============ -->
+  <section class="frame" id="opensource" aria-labelledby="os-title">
+    <header class="frame__head">
+      <span class="frame__index" aria-hidden="true">[ 05 ]</span>
+      <h2 class="frame__label" id="os-title">Open source</h2>
+      <span class="frame__rule" aria-hidden="true"></span>
+    </header>
+
+    <div class="os">
+      <h3 class="os__title">THE INFRASTRUCTURE<br>SHOULD BE YOURS.</h3>
+      <p class="os__lede">
+        We publish the machinery whenever possible. Open source, open interfaces,
+        open hardware, open research.
+      </p>
+      <a class="btn btn--primary os__cta" href="https://github.com/HyperonX-Team" target="_blank" rel="noopener noreferrer">
+        View HyperonX on GitHub <span class="arrow" aria-hidden="true">↗</span>
+      </a>
+    </div>
+
+    <dl class="os-stats" aria-label="Live organization statistics">
+      <div class="os-stat">
+        <dt>Repositories</dt>
+        <dd class="os-stat__value" data-count data-count-target="0">—</dd>
+      </div>
+      <div class="os-stat">
+        <dt>Languages</dt>
+        <dd class="os-stat__value" id="os-languages">—</dd>
+      </div>
+      <div class="os-stat">
+        <dt>Categories</dt>
+        <dd class="os-stat__value" id="os-categories">—</dd>
+      </div>
+      <div class="os-stat">
+        <dt>Latest activity</dt>
+        <dd class="os-stat__value" id="os-activity">—</dd>
+      </div>
+    </dl>
+  </section>
+
+  <!-- ============ REFUSE ============ -->
+  <section class="frame" id="refuse" aria-labelledby="refuse-title">
+    <header class="frame__head">
+      <span class="frame__index" aria-hidden="true">[ 06 ]</span>
+      <h2 class="frame__label" id="refuse-title">What we refuse to accept</h2>
+      <span class="frame__rule" aria-hidden="true"></span>
+    </header>
+
+    <div class="refuse">
+      <ul class="refuse__list" role="list">
+        <li class="refuse__item" data-state="strike">Closed ecosystems</li>
+        <li class="refuse__item" data-state="strike">Proprietary lock-in</li>
+        <li class="refuse__item" data-state="strike">Artificial scarcity</li>
+        <li class="refuse__item" data-state="strike">Centralized control</li>
+        <li class="refuse__item" data-state="strike">Unnecessary complexity</li>
+        <li class="refuse__item" data-state="strike">Infrastructure rent</li>
+      </ul>
+      <p class="refuse__verdict">Build the alternative.</p>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <p class="footer__statement">BUILD THE<br>ALTERNATIVE<span class="footer__cursor" aria-hidden="true">.</span></p>
+
+    <div class="footer__meta">
+      <p class="footer__brand">HYPERONX <span class="footer__tag">/ ANTI-MONOPOLY DEEP-TECH R&amp;D</span></p>
+      <nav class="footer__nav" aria-label="Footer">
+        <a href="https://github.com/HyperonX-Team" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="#projects">Projects</a>
+        <a href="#research">Research</a>
+      </nav>
+      <p class="footer__copy">© <span id="year">2026</span> HyperonX · Built openly. No tracking.</p>
+    </div>
+  </footer>
+</main>
+
+<!-- Project detail modal -->
+<div class="modal" id="modal" hidden>
+  <div class="modal__backdrop" data-close-modal></div>
+  <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <header class="modal__head">
+      <p class="modal__category" id="modal-category"></p>
+      <button class="modal__close" type="button" data-close-modal aria-label="Close project details">[ ESC / ✕ ]</button>
+    </header>
+    <div class="modal__body">
+      <h3 class="modal__title" id="modal-title"></h3>
+      <p class="modal__sumsrc overlabel" id="modal-source"></p>
+      <p class="modal__summary" id="modal-summary"></p>
+
+      <div class="modal__section">
+        <p class="overlabel">[ Source · GitHub README ]</p>
+        <p class="modal__readme" id="modal-readme">No README summary available for this repository.</p>
+      </div>
+
+      <dl class="modal__stats" aria-label="Repository statistics">
+        <div><dt>Stars</dt><dd id="modal-stars">—</dd></div>
+        <div><dt>Language</dt><dd id="modal-language">—</dd></div>
+        <div><dt>License</dt><dd id="modal-license">—</dd></div>
+        <div><dt>Last push</dt><dd id="modal-pushed">—</dd></div>
+        <div><dt>Forks</dt><dd id="modal-forks">—</dd></div>
+        <div><dt>Open issues</dt><dd id="modal-issues">—</dd></div>
+      </dl>
+
+      <ul class="taglist" id="modal-tags"></ul>
+
+      <div class="modal__thesis">
+        <p class="overlabel overlabel--accent">[ HyperonX thesis · interpretation ]</p>
+        <p id="modal-thesis"></p>
+      </div>
+    </div>
+    <footer class="modal__foot">
+      <a class="btn btn--primary" id="modal-link" href="#" target="_blank" rel="noopener noreferrer">
+        Open repository <span class="arrow" aria-hidden="true">↗</span>
+      </a>
+    </footer>
+  </div>
+</div>
+
+<script src="app.js" defer></script>
+</body>
+</html>
